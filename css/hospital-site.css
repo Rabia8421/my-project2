@@ -1,0 +1,111 @@
+/* common css start here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+
+.button{
+    border-radius: 20px;
+}
+
+.card{
+    background-color: aliceblue;
+}
+.card:hover{
+    color: white;
+    background-color: rgb(11, 129, 247);
+}
+/* common css end here */
+
+/* container start here */
+#container{
+    margin: 0 20px;
+}
+
+/*home section start here */
+#section1 img{
+    height: 450px;
+    width: 100%;
+}
+
+#section2 svg{
+    margin: 10px 0px;
+    color: rgb(11, 129, 247);
+}
+#section2{
+    display: grid;
+    grid-template-columns: auto,auto,auto;
+}
+
+/*about section start here */
+#section3 img{
+    height: 100%;
+    width: 100%;
+}
+
+#section3 svg{
+    color: rgb(11, 129, 247);
+    margin: 20px 10px;
+}
+
+/* doctors section start here */
+#section6 img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+/*contact section start here */
+#section7{
+    background-color: rgb(184, 204, 240);
+}
+
+#section7 textarea{
+    width: 90%;
+    height: 120px;
+}
+
+#section7 span{
+    width: 20px;
+
+}
+
+/* media quary start here */
+@media screen and (max-width:500px){
+    #container{
+        font-size: small;
+    }
+
+    #section2,#section4,#about-sec-div,#service-sec-div {
+        flex-direction: column;
+    }
+    #service-sec-div .card{
+        width: 100%;
+        margin: 10px;
+    }
+    
+    #section6 img{
+        height: 50px;
+        width: 50px;
+        margin: 10px auto;
+    }
+
+    #section6 .doctor-card{
+        width: 100%;
+        margin: 10px;
+    }
+
+    #section6 .card-body{
+        text-align: left;
+    }
+
+    #section7 input{
+        width: 130px;
+    }
+}
